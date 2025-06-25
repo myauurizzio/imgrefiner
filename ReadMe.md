@@ -17,6 +17,21 @@
 Python 3.x  
 Pillow  
 
+## Installation
+
+Создайте виртуальное окружение и активируйте его:
+
+```
+python -m venv venv
+source venv/bin/activate # Linux/macOS
+venv\Scripts\activate # Windows
+```
+
+Установите необходимые зависимости:
+```
+pip install -r requirements.txt
+```
+
 ## Usage
 
 Для использования скрипта введите следующую команду:
