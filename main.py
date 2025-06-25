@@ -120,14 +120,16 @@ def main():
     parser = argparse.ArgumentParser(description="Пример скрипта с параметрами.")
     
     # Добавление параметров
-    parser.add_argument('--input', type=str, help='Входной файл')
-    parser.add_argument('--watermark', type=str, help='Водяной знак')
+    parser.add_argument('--input', type=str, help='Входной файл', required=True)
+    parser.add_argument('--watermark', type=str, help='Водяной знак', required=True)
     parser.add_argument('--output', type=str, help='Выходной файл')
     parser.add_argument('--path', type=str, help='Рабочий каталог')
     parser.add_argument('--verbose', action='store_true', help='Включить подробный вывод')
     
     # Разбор параметров
     args = parser.parse_args()
+
+    # print(args)
 
     if args.watermark is None:
         wm_file = 'wm.png'
